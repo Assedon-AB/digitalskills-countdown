@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Lansering av Digitalskills.se</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <main>
+            <div id="timer"></div>
+
+            <h1>Lansering av digitalskills.se</h1>
+            <p>Nu lanseras digitalskills.se! En helt datadriven tjänst som ger prognoser och trender på yrken och digitala spetskompetenser. </p>
+            <a class="button" href="https://www.swedishjobtech.se/events/lansering-av-digitalskills-se-ett-verktyg-for-att-analysera-digitala-kompetensbehov">Registrera dig för webinar</a>
+
+        </article>
+        <noscript>2022-04-29 09:00 lanseras digitalskills.se</noscript>
+        <script>
+            function updateTimer() {
+                future = new Date("2022-04-29 09:00");
+                now = new Date();
+                diff = future - now;
+
+                days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                hours = Math.floor(diff / (1000 * 60 * 60));
+                mins = Math.floor(diff / (1000 * 60));
+                secs = Math.floor(diff / 1000);
+
+                d = days;
+                h = hours - days * 24;
+                m = mins - hours * 60;
+                s = secs - mins * 60;
+
+                document.getElementById("timer")
+                  .innerHTML =
+                  '<div>' + d + '<span>Dagar</span></div>' +
+                  '<div>' + h + '<span>Timmar</span></div>' +
+                  '<div>' + m + '<span>Minuter</span></div>' +
+                  '<div>' + s + '<span>Sekunder</span></div>';
+                }
+                setInterval('updateTimer()', 1000);
+        </script>
+    </body>
+</html>

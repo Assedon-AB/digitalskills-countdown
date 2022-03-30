@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+
+@media screen and (min-width: 320px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+    }
+
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 1.4em;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1em;
+        max-width: 700px;
+        margin: 14px auto;
+    }
+
+    .button {
+        display: block;
+        margin: 24px auto;
+        width: max-content;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        color: #fff;
+        background-color: green;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #timer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 6rem;
+        width: 100%;
+    }
+
+    #timer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.2em;
+    }
+
+    #timer div span {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    #timer div {
+        font-size: 3em;
+    }
+
+    #timer div span {
+        font-size: 0.5em;
+    }
+}
